@@ -6,4 +6,4 @@ before_install:
   - docker build -t dmgolovin/docker-react -f Dockerfile.dev .
 
 script:
-  - dcoker run dmgolovin/docker-react npm run test  -- --coverage
+  - docker run dmgolovin/docker-react npm run test  -- --coverage
